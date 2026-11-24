@@ -1,0 +1,10 @@
+,MAE,RMSE,WAPE %,Bias %,WAPE % excl. bulk month,Bias % excl. bulk month
+"NN v1: one network per item, raw scale",23.27,43.71,110.76,1.02,121.17,58.82
+"NN v2: one pooled network, per-item scaling",17.89,41.85,85.15,-29.3,75.23,8.96
+"NN v3: + log transform, seasonality & rolling features",17.05,40.81,81.14,-37.68,70.47,-4.2
+"NN v4 (final): smaller network (16), 10-seed ensemble",16.53,40.24,78.69,-37.05,66.67,-1.46
+NN v5 (rejected): + log-normal bias correction,17.39,39.87,82.76,-11.14,71.04,38.4
+Naive (last month),25.16,56.58,119.75,4.56,132.86,65.51
+Seasonal naive (same month last year),18.82,42.38,89.57,-25.7,91.87,16.87
+3-month moving average,23.56,45.74,112.14,7.39,121.36,71.81
+12-month moving average,21.42,41.17,101.97,6.02,106.34,71.25
